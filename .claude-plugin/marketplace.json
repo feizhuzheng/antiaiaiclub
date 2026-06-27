@@ -1,0 +1,15 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "antiaiaiclub",
+  "description": "antiaiaiclub — 去 AI 味改写 skill 的安装入口。",
+  "owner": { "name": "feizhuzheng" },
+  "metadata": { "pluginRoot": "./plugins" },
+  "plugins": [
+    {
+      "name": "antiaiaiclub",
+      "source": "antiaiaiclub",
+      "description": "去 AI 味改写：把文章改得更像真人写的，保留全部事实数据。",
+      "license": "MIT"
+    }
+  ]
+}

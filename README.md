@@ -4,7 +4,39 @@
 
 这个仓库做一件事：**迭代打磨一个"去 AI 味"的改写 prompt**，用一套 100 分制的"真人度"评分标准来衡量效果，看每一版 prompt 改完之后分数有没有提高。
 
-## 玩法
+## 🛠 作为 Claude Skill 用（推荐）
+
+这套打磨好的 prompt 已经封装成一个 Claude Skill，叫 `antiaiaiclub`。你说"帮我把这篇文章去 AI 味 / 改写得别那么像 AI / humanize"它就会自动触发。两种安装方式：
+
+### 方式 A：一键安装（Claude Code，推荐）
+
+```
+/plugin marketplace add feizhuzheng/antiaiaiclub
+/plugin install antiaiaiclub@antiaiaiclub
+```
+
+装完直接说需求即可；也可显式调用 `/antiaiaiclub:antiaiaiclub`。仓库有更新时 `/plugin marketplace update` 即可拉到。
+
+### 方式 B：手动拷贝（Claude Code / 不想装插件）
+
+```bash
+git clone https://github.com/feizhuzheng/antiaiaiclub
+cp -r antiaiaiclub/plugins/antiaiaiclub/skills/antiaiaiclub ~/.claude/skills/
+```
+
+之后在 Claude Code 里说需求即可触发，或 `/antiaiaiclub`。
+
+### 方式 C：Claude.ai 网页 / 桌面版
+
+把 `plugins/antiaiaiclub/skills/antiaiaiclub/` 这个文件夹打包成 zip，在 设置 → Capabilities → Skills 里上传。
+
+### 不想装，只想要 prompt 文本
+
+直接复制根目录 [`PROMPT.md`](PROMPT.md)，粘进任意对话、把文章接在后面。
+
+---
+
+## 玩法（这个仓库是怎么把那套 prompt 磨出来的）
 
 1. 有一套评分标准 [`RUBRIC.md`](RUBRIC.md)：分数越高，文章越像真人写的（满分 100）。
 2. 有一篇测试文章 [`source/original.md`](source/original.md)，先用标准打一个**基线分**。

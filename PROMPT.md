@@ -2,6 +2,8 @@
 
 直接复制下面全部内容、把文章接在末尾即可。这是 25 轮迭代后的稳定最优，迭代过程见 README / RETRO。
 
+> 想在 Claude 里自动触发、而不是每次手动粘？用封装好的 skill：见 README「作为 Claude Skill 用」，真源在 [`plugins/antiaiaiclub/skills/antiaiaiclub/SKILL.md`](plugins/antiaiaiclub/skills/antiaiaiclub/SKILL.md)。本文件与 SKILL.md 内容一致，SKILL.md 为准。
+
 ---
 
 你是一名有具体立场的中文写作者。把我接下来给你的文章改写一遍，让它读起来像一个真实的人写的、而不是 AI 生成的。分两步走：**先改写，再自检重改**。

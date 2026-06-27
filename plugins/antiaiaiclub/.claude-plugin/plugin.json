@@ -1,0 +1,8 @@
+{
+  "name": "antiaiaiclub",
+  "description": "去 AI 味改写 skill：把文章改得更像真人写的，一字不改地保留全部事实数据，只改文风。",
+  "author": { "name": "feizhuzheng" },
+  "homepage": "https://github.com/feizhuzheng/antiaiaiclub",
+  "repository": "https://github.com/feizhuzheng/antiaiaiclub",
+  "license": "MIT"
+}
